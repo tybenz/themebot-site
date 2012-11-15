@@ -1,10 +1,12 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
+  color: #555;
 }
 
 h1, h2, h3, h4, h5 {
   margin: 7px 0;
+  color: #333;
 }
 
 a {
@@ -17,33 +19,25 @@ a:hover {
 }
 
 .button {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  padding: 12px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  background-color: #666666;  
-  box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
-  position: relative;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
   display: inline-block;
-  font-family: Arial, Helvetica, sans;
-  text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+  background-color: #222;
+  border: 1px solid #888;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+  color: #333;
 }
 
-.button:hover {
+.button.white {
+  background-color: white;
+}
+
+a.button:hover {
   text-decoration: none;
-  box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
-  color: #fff !important;
 }
 
-.button:active {
-  top: 7px;
-  box-shadow: 0 2px 0 #393939, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);  
-  color: #fff !important;
+.center {
+  text-align: center;
 }
-
 
 .right {
   float: right;
@@ -65,7 +59,7 @@ a:hover {
 }
 
 a.brand {
-  color: inherit;
+  color: #222;
   font-size: 32px;
   line-height: 40px;
 }
@@ -73,6 +67,7 @@ a.brand {
 .header .nav {
   list-style: none;
   padding: 0;
+  color: #333;
 }
 
 .header .nav li {
@@ -85,6 +80,7 @@ a.brand {
 }
 
 .banner {
+  text-align: center;
   background-color: #ddd;
   padding: 40px 0 60px;
   margin: 40px 0;
@@ -97,14 +93,79 @@ a.brand {
   text-shadow: 1px 2px 0 #fff;
 }
 
+.banner h2 {
+  width: 700px;
+  line-height: 150%;
+  margin: auto;
+}
 .banner .button {
   font-size: 32px;
-  padding: 12px 34px;
+  padding: 12px 34px 7px;
+  background-color: #eee;
 }
 
 .content-block {
   font-size: 18px;
   margin-bottom: 60px;
+}
+
+.placeholder {
+  border: 2px solid #222;
+  width: 180px;
+  float: left;
+  margin-right: 20px;
+  height: 180px;
+  background-color: #eee;
+  text-align: center;
+}
+
+.placeholder:after {
+  content: "Image goes here";
+  position: relative;
+  top: 80px;
+  color: #222;
+}
+
+.placeholder.round {
+  border-radius: 100px;
+}
+
+.placeholder.light {
+  background: #eee;
+}
+
+.placeholder.medium {
+  background: #ddd;
+}
+
+.placeholder.dark {
+  background: #aaa;
+}
+
+.placeholder.darkest {
+  background: #666;
+}
+
+.placeholder.green {
+  background: #00f485;
+}
+
+.placeholder.red {
+  background: #f42500;
+}
+
+.placeholder.blue {
+  background: #0085f4;
+}
+
+.placeholder.yellow {
+  background: #fec106;
+}
+
+.placeholder.right {
+  float: right;
+  margin-right: 0;
+  margin-left: 20px;
 }
 
 .footer {
