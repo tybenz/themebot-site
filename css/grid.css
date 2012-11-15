@@ -1,0 +1,43 @@
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.row {
+  margin-left: -34px;
+  *zoom: 1;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+}
+
+.column {
+  float: left;
+  margin-left: 34px;
+}
+
+.one.column {
+  width: 100%;
+}
+
+.one-half.column {
+  width: 568px;
+}
