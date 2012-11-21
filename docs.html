@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <title>ThemeBot</title>
+
+  <link rel="stylesheet" href="css/grid.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/layout.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="container clearfix">
+      <a href="index.html" class="brand"><img src="img/robot.png">ThemeBot</a>
+      <ul class="right nav">
+        <li>
+        <a href="docs.html"><img src="img/paper.png">Docs</a>
+        </li>
+        <li>
+          <a href="#"><img src="img/paint-can.png" alt="" />Demo</a>
+        </li>
+        <li>
+          <a href="#"><img src="img/save.png" alt="" />Download</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="docs two-thirds column">
+          <div class="content-block">
+            <h1>Hello<a href="#" class="top-link"><img src="img/arrow-up.png" alt="" /></a></h1>
+
+            <p>
+              Thanks for checking out ThemeBot. Here you'll find a veritable
+              schmorgesborg of information on what ThemeBot can do and how you can
+              modify it to do exactly what you want. Use the nav on the left to jump ahead.
+            </p>
+
+            <h1 id="parsing">Parsing<a href="#" class="top-link"><img src="img/arrow-up.png" alt="" /></a></h1>
+            <p>
+              ThemeBot does parsing in very simple way. It looks for a comment within
+              the CSS, that you specify the syntax of. ThemeBot's default placeholder
+              marker syntax looks like this:
+              ThemeBot does parsing in very simple way. It looks for a comment within
+              the CSS, that you specify the syntax of. ThemeBot's default placeholder
+              marker syntax looks like this:
+            </p>
+            <p>
+              ThemeBot does parsing in very simple way. It looks for a comment within
+              the CSS, that you specify the syntax of. ThemeBot's default placeholder
+              marker syntax looks like this:
+            </p>
+
+            <pre>
+body p {
+  line-height: 1.3em /*{global-body-paragraph}*/;
+}</pre>
+
+            <div class="banner tipbot">
+                <p><img src="img/robot-head.png" alt=""/>
+                  &ldquo;ThemeBot will skip over any marker without whitespace
+                  between the colon and the marker. &rdquo;
+                </p>
+            </div>
+
+            <p>
+              ThemeBot runs the parser when the app is instantiated, and continuously
+              updates the values of the CSS file. When a [download](#) request is
+              made, all ThemeBot has to do is serve up the already compiled file.
+              (Along with a few more [options](#) available for configuration).
+            </p>
+
+            <h1 id="widgets">Widgets<a href="#" class="top-link"><img src="img/arrow-up.png" alt="" /></a></h1>
+
+            <p>
+              ThemeBot was made to do widgets. Widgets for color, gradients, numbers,
+              fonts. You name it, ThemeBot has a widget for it. On the off-chance
+              there's something ThemeBot can't already do, you can roll your own
+              widgets. Make sure to submit a [pull-request](#) so that everyone else
+              can enjoy your widgets too.
+            </p>
+
+            <p>
+              Widgets boil down to a few basic ingredients.
+            </p>
+
+            <ol>
+              <li>Markup - ThemeBot needs to be able to generate it's widgets' markup on the fly.</li>
+              <li>Behavior - This is where all the widget-ty goodness get's wired up</li>
+              <li>Write Out - A function that can export the widget's inherit CSS value back into the theme file</li>
+            </ol>
+            <p>Here's some source code:</p>
+            <pre>ThemeBot.CustomWidget = ThemeBot.Widget.extend({
+  template: '&lt;input type="&lt;@- data_type @&gt;" value="&lt;@-value @&gt;"&gt;',
+  init: function() {
+    //custom behavior code goes here
+  },
+  writeOut: function() {
+    return this.value
+  }
+});</pre>
+
+            <h1 id="download">Download<a href="#" class="top-link"><img src="img/arrow-up.png" alt="" /></a></h1>
+            <p>
+              ThemeBot's parsing stays up-to-date on all your style changes, so when
+              the time comes to download there's no extraction of data.
+            </p>
+
+            <p>
+              ThemeBot simply passes the entire CSS file to the download process,
+              which is customizable in the following ways:
+            </p>
+
+            <ol>
+              <li>Compression - Zip file or gZip</li>
+              <li>Minification - Provide any combination of unminified and minified versions of the theme</li>
+              <li>Demo file - Provide a default html file to show the user the download process worked</li>
+            </ol>
+            <p>Example:</p>
+            <pre>// ...somewhere in your ThemeBot Instance Declaration
+downloadOptions: {
+  minification: 'both',
+  compression: 'gzip',
+  demo_path: 'demo.html'
+}</pre>
+            <div class="banner tipbot">
+                <p><img src="img/robot-head.png" alt=""/>
+                  &ldquo;The server-side aspect of the download can be implemented in multiple languages
+                  depending on your server's configuartion. Specify which implementation you'd like in
+                  your TBCONFIG file &rdquo;
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="one-third column">
+          <ul class="subnav">
+            <li><a href="#parsing">Parsing</a></li>
+            <li><a href="#widgets">Widgets</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="one column">
+          <div class="right">
+            <a href="#" class="top-link"><img src="img/arrow-up.png" alt="" /></a>
+            <div class="copyright">&copy; 2012 Tyler Benziger</div>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Issues</a>
+            </li>
+            <li>
+              <a href="#">@tybenz</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

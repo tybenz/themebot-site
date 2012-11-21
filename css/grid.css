@@ -41,3 +41,11 @@
 .one-half.column {
   width: 568px;
 }
+
+.one-third.column {
+  width: 367px;
+}
+
+.two-thirds.column {
+  width: 768px;
+}
