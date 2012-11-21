@@ -175,21 +175,18 @@ a.brand {
 
 .hero.banner {
   padding: 40px 0 60px;
-  text-align: center;
   margin: 0 0 40px;
 }
 
 .hero.banner h1 {
   font-size: 85px;
-  text-align: center;
-  margin: 20px 0 20px;
+  margin: 20px 0 0;
   text-shadow: 1px 2px 0 #fff;
 }
 
 .hero.banner p {
-  width: 750px;
   line-height: 150%;
-  margin: 10px auto;
+  margin: 10px 0;
   font-size: 22px;
   color: #222;
 }
@@ -201,17 +198,23 @@ a.brand {
   background-color: #eee;
 }
 
+.subnav-wrapper {
+  background: #ddd;
+  border-radius: 3px;
+}
+
 .subnav {
-  padding: 0;
   list-style: none;
-  margin-top: -10px;
+  margin: 0;
   color: #333;
-  padding: 5px 30px 30px;
+  padding: 15px 30px;
+  font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
 }
 
 .subnav li {
   margin: 20px 0;
-  font-size: 20px;
+  font-size: 26px;
+  letter-spacing: 0.05em;
 }
 
 .subnav a {
@@ -291,6 +294,11 @@ a.brand {
   margin-left: 20px;
 }
 
+.landing .content-block img {
+  float: left;
+  margin-right: 20px;
+}
+
 .footer {
   background-color: #f2f2f2;
   padding: 20px 0;
@@ -330,12 +338,12 @@ pre {
   line-height: 1.4em;
 }
 
-ol {
+ol, ul {
   padding-left: 22px;
   margin: 30px 0;
 }
 
-ol li {
+ol li, ul li {
   margin: 20px 0;
 }
 
@@ -349,4 +357,10 @@ ol li {
 
 .top-link img {
   height: 14px;
+}
+
+.credits ol img {
+  height: 32px;
+  vertical-align:middle;
+  margin-right: 5px;
 }
