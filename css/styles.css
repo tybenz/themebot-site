@@ -179,7 +179,7 @@ a.brand {
 }
 
 .hero.banner h1 {
-  font-size: 85px;
+  font-size: 74.1px;
   margin: 20px 0 0;
   text-shadow: 1px 2px 0 #fff;
 }
@@ -187,15 +187,18 @@ a.brand {
 .hero.banner p {
   line-height: 150%;
   margin: 10px 0;
-  font-size: 22px;
+  font-size: 20px;
   color: #222;
 }
 
 .hero.banner .button {
-  font-size: 42px;
+  font-size: 70px;
+  text-align: center;
   line-height: 42px;
-  padding: 12px 30px 7px;
+  padding: 34px 0 31px;
   background-color: #eee;
+  margin-top: 23px;
+  width: 100%;
 }
 
 .subnav-wrapper {
@@ -297,14 +300,17 @@ a.brand {
 .landing .content-block img {
   float: left;
   margin-right: 20px;
+  width: 80px;
 }
 
 .footer {
-  background-color: #f2f2f2;
-  padding: 20px 0;
-  position: relative;
   font-size: 15px;
   margin-top: 60px;
+}
+
+.footer .container {
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
 }
 
 .footer .links {
@@ -314,7 +320,12 @@ a.brand {
 }
 
 .footer .links li {
-  margin: 20px 0;
+  margin: 0 20px;
+  float: left;
+}
+
+.footer .links li.first {
+  margin-left: 0;
 }
 
 .footer .right {
@@ -324,14 +335,14 @@ a.brand {
   width: 300px;
 }
 
-.footer .copyright {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.footer .top-link {
+  float: none;
+  margin: 0 0 0 15px;
+  vertical-align: middle;
 }
 
 pre {
-  box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
+  border: 1px solid #aaa;
   padding: 10px;
   margin-bottom: 40px;
   font-size: 14px;
@@ -353,10 +364,15 @@ ol li, ul li {
   color: inherit;
   float: right;
   margin-top: 23px;
+  opacity: .5;
 }
 
 .top-link img {
   height: 14px;
+}
+
+.top-link:hover {
+  opacity: 1;
 }
 
 .credits ol img {

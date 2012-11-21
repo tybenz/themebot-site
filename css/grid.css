@@ -35,7 +35,7 @@
 }
 
 .one.column {
-  width: 100%;
+  width: 1170px;
 }
 
 .one-half.column {
@@ -48,4 +48,12 @@
 
 .two-thirds.column {
   width: 768px;
+}
+
+.one-fourth.column {
+  width: 267px;
+}
+
+.three-fourths.column {
+  width: 869px;
 }
