@@ -8,15 +8,18 @@
   <link rel="stylesheet" href="css/grid.css" type="text/css" />
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
   <link rel="stylesheet" href="css/font.css" type="text/css" />
+  <link rel="stylesheet" href="css/prettify.css" type="text/css" />
 
   <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
   <script type="text/javascript" charset="utf-8" src="js/layout.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/prettify.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/lang-css.js"></script>
 </head>
-<body>
+<body onload="prettyPrint()">
 
   <div class="header">
     <div class="container clearfix">
-      <a href="index.html" class="brand"><img src="img/robot-red.png">ThemeBot</a>
+      <a href="index.html" class="brand">ThemeBot</a>
       <ul class="right nav">
         <li>
           <a href="docs.html"><span class="icon16 paper"></span>Docs</a>
@@ -37,7 +40,7 @@
       <div class="row">
         <div class="docs two-thirds column">
           <div class="content-block">
-            <h1>Hello<a href="#" class="top-link"><img src="img/arrow-up.png" alt="" /></a></h1>
+            <h1>Hello</h1>
 
             <p>
               Thanks for checking out ThemeBot. Here you'll find a veritable
@@ -45,7 +48,7 @@
               modify it to do exactly what you want. Use the nav on the left to jump ahead.
             </p>
 
-            <h1 id="parsing">Parsing<a href="#" class="top-link"><img src="img/arrow-up.png" alt="" /></a></h1>
+            <h1 id="parsing">Parsing<a href="#" class="top-link"><span class="icon16 arrow-up"></span></a></h1>
             <p>
               ThemeBot does parsing in very simple way. It looks for a comment within
               the CSS, that you specify the syntax of. ThemeBot's default placeholder
@@ -60,7 +63,7 @@
               marker syntax looks like this:
             </p>
 
-            <pre>
+            <pre class="prettyprint">
 body p {
   line-height: 1.3em /*{global-body-paragraph}*/;
 }</pre>
@@ -79,7 +82,7 @@ body p {
               (Along with a few more <a href="#">options</a> available for configuration).
             </p>
 
-            <h1 id="widgets">Widgets<a href="#" class="top-link"><img src="img/arrow-up.png" alt="" /></a></h1>
+            <h1 id="widgets">Widgets<a href="#" class="top-link"><span class="icon16 arrow-up"></span></a></h1>
 
             <p>
               ThemeBot was made to do widgets. Widgets for color, gradients, numbers,
@@ -99,7 +102,7 @@ body p {
               <li>Write Out - A function that can export the widget's inherit CSS value back into the theme file</li>
             </ol>
             <p>Here's some source code:</p>
-            <pre>ThemeBot.CustomWidget = ThemeBot.Widget.extend({
+            <pre class="prettyprint">ThemeBot.CustomWidget = ThemeBot.Widget.extend({
   template: '&lt;input type="&lt;@- data_type @&gt;" value="&lt;@-value @&gt;"&gt;',
   init: function() {
     //custom behavior code goes here
@@ -109,7 +112,7 @@ body p {
   }
 });</pre>
 
-            <h1 id="download">Download<a href="#" class="top-link"><img src="img/arrow-up.png" alt="" /></a></h1>
+            <h1 id="download">Download<a href="#" class="top-link"><span class="icon16 arrow-up"></span></a></h1>
             <p>
               ThemeBot's parsing stays up-to-date on all your style changes, so when
               the time comes to download there's no extraction of data.
@@ -126,7 +129,7 @@ body p {
               <li>Demo file - Provide a default html file to show the user the download process worked</li>
             </ol>
             <p>Example:</p>
-            <pre>// ...somewhere in your ThemeBot Instance Declaration
+            <pre class="prettyprint">// ...somewhere in your ThemeBot Instance Declaration
 downloadOptions: {
   minification: 'both',
   compression: 'gzip',
@@ -158,7 +161,7 @@ downloadOptions: {
         <div class="one column">
           <div class="right">
             <span class="copyright">&copy; 2012 <a href="http://tybenz.com">Tyler Benziger</a></span>
-            <a href="#" class="top-link"><img src="img/arrow-up.png" alt="" /></a>
+            <a href="#" class="top-link"><span class="icon16 arrow-up"></span></a>
           </div>
           <ul class="links">
             <li class="first">

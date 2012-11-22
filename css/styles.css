@@ -93,16 +93,22 @@ a:hover {
   position: relative;
 }
 
-a.brand {
+.brand {
   color: #222;
   font-size: 45px;
   font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
-  line-height: 32px;
   float: left;
+  width: 145px;
+  height: 45px;
+  padding-left: 49px;
+  padding-top: 17px;
+  background: url(../img/robot-red.png) no-repeat;
+  vertical-align: text-bottom;
 }
 
 .brand:hover {
   text-decoration: none;
+  background: url(../img/robot.png) no-repeat;
 }
 
 .brand img {
@@ -382,7 +388,6 @@ pre {
   border: 1px solid #aaa;
   padding: 10px;
   margin-bottom: 40px;
-  font-size: 14px;
   line-height: 1.4em;
 }
 
