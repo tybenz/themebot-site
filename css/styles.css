@@ -6,40 +6,64 @@ body {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   margin: 0;
   color: #555;
+  background-color: #f9f9f9;
 }
 
 h1, h2, h3, h4, h5 {
   margin: 7px 0;
-  color: #333;
+  color: #222;
   font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
 a {
-  color: inherit;
+  color: #f13d3a;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #f13d3a;
 }
 
 .button {
   display: inline-block;
-  background-color: #222;
-  border: 1px solid #888;
+  border: 1px solid #f13d3a;
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
-  color: #333;
+  padding: 3px 10px;
   font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+  background-color: #f13d3a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f13d3a), to(#CC2500));
+  background-image: -webkit-linear-gradient(top, #f13d3a, #CC2500);
+  background-image:    -moz-linear-gradient(top, #f13d3a, #CC2500);
+  background-image:      -o-linear-gradient(top, #f13d3a, #CC2500);
+  background-image:         linear-gradient(to bottom, #f13d3a, #CC2500);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  color: #f9f9f9 !important;
+  text-shadow: 0 -1px 1px #000;
 }
 
-.button.white {
-  background-color: white;
-}
-
-a.button:hover {
+.button:hover {
   text-decoration: none;
+  background-color: #f13d3a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f13d3a), to(#D92512));
+  background-image: -webkit-linear-gradient(top, #f13d3a, #D92512);
+  background-image:    -moz-linear-gradient(top, #f13d3a, #D92512);
+  background-image:      -o-linear-gradient(top, #f13d3a, #D92512);
+  background-image:         linear-gradient(to bottom, #f13d3a, #D92512);
+}
+
+.button:active {
+  position: relative;
+  top: 2px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  background-color: #D92512;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#D92512), to(#f13d3a));
+  background-image: -webkit-linear-gradient(top, #D92512, #f13d3a);
+  background-image:    -moz-linear-gradient(top, #D92512, #f13d3a);
+  background-image:      -o-linear-gradient(top, #D92512, #f13d3a);
+  background-image:         linear-gradient(to bottom, #D92512, #f13d3a);
 }
 
 .center {
@@ -118,24 +142,31 @@ a.brand {
 }
 
 .banner {
-  background-color: #ddd;
+  background-color: #b8b8b8;
   padding: 40px 20px;
   margin-bottom: 40px;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  color: #111;
 }
 
 .tipbot {
   overflow: visible;
   position: relative;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .tipbot:before, .tipbot:after {
   content: "";
   position: absolute;
-  background: #ddd;
-  top: 0;
-  bottom: 0;
+  background: #b8b8b8;
+  top: -1px;
+  bottom: -1px;
   width: 9999px;
   right: 100%;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
 }
 
 .tipbot:before {
@@ -158,7 +189,7 @@ a.brand {
   position: relative;
   top: 3px;
   margin-right: 15px;
-  color: #000;
+  color: inherit;
 }
 
 .content-block .tipbot h2, .landing .content-block h2 {
@@ -168,7 +199,7 @@ a.brand {
 .content-block .tipbot p {
   font-size: 32px;
   line-height: 1.3em;
-  color: #444;
+  color: inherit;
   margin: 0;
   position: relative;
 }
@@ -176,19 +207,21 @@ a.brand {
 .hero.banner {
   padding: 40px 0 60px;
   margin: 0 0 40px;
+  color: #111;
 }
 
 .hero.banner h1 {
   font-size: 74.1px;
   margin: 20px 0 0;
-  text-shadow: 1px 2px 0 #fff;
+  text-shadow: 1px 1px 0 #fff;
+  color: inherit;
 }
 
 .hero.banner p {
   line-height: 150%;
   margin: 10px 0;
   font-size: 20px;
-  color: #222;
+  color: inherit;
 }
 
 .hero.banner .button {
@@ -196,9 +229,9 @@ a.brand {
   text-align: center;
   line-height: 42px;
   padding: 34px 0 31px;
-  background-color: #eee;
   margin-top: 23px;
   width: 100%;
+  border-radius: 10px;
 }
 
 .subnav-wrapper {
@@ -328,6 +361,10 @@ a.brand {
   margin-left: 0;
 }
 
+.footer a {
+  color: inherit;
+}
+
 .footer .right {
   text-align: right;
   height: 108px;
@@ -352,6 +389,7 @@ pre {
 ol, ul {
   padding-left: 22px;
   margin: 30px 0;
+  color: #333;
 }
 
 ol li, ul li {
@@ -380,3 +418,40 @@ ol li, ul li {
   vertical-align:middle;
   margin-right: 5px;
 }
+
+.try-it {
+  font-size: 32px;
+  padding: 8px 20px;
+}
+
+.icon16{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  width:16px;
+  height:16px;
+  margin-right: 3px;
+  background:url("../img/icons16.png") top left no-repeat;
+}
+.icon16.arrow-up{ background-position:0 0; }
+.icon16.paper{ background-position:-16px 0; }
+.icon16.users{ background-position:-32px 0; }
+.icon16.play{ background-position:-48px 0; }
+.icon16.robot{ background-position:-64px 0; }
+.icon16.download{ background-position:-80px 0; }
+
+.icon32{
+  display: inline-block;
+  vertical-align: middle;
+  width:32px;
+  height:32px;
+  margin-right: 5px;
+  background:url("../img/icons32.png") top left no-repeat;
+}
+.icon32.arrow-up{ background-position:0 0; }
+.icon32.paper{ background-position:-32px 0; }
+.icon32.users{ background-position:-64px 0; }
+.icon32.play{ background-position:-96px 0; }
+.icon32.robot{ background-position:-128px 0; }
+.icon32.download{ background-position:-160px 0; }
