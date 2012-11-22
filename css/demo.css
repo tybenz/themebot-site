@@ -1,0 +1,49 @@
+#colorwheel {
+  float: right;
+  background-color: #aaa;
+  padding: 30px 30px 40px;
+}
+
+.hex {
+    float: left;
+    margin-right: -6px;
+    margin-bottom: -12px;
+}
+.hex .left {
+    float: left;
+    width: 0;
+    border-right: 7px solid #6C6;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+.hex .middle {
+    float: left;
+    width: 15px;
+    height: 26px;
+    background: #6C6;
+}
+.hex .right {
+    float: left;
+    width: 0;
+    border-left: 7px solid #6C6;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+.hex-row {
+    clear: left;
+}
+.hex.even {
+    margin-top: 13px;
+}
+
+.hex-offset1 {
+  margin-left: 23px;
+}
+
+.hex-offset2 {
+  margin-left: 46px;
+}
+
+.hex-offset3 {
+  margin-left: 69px;
+}
