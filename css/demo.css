@@ -1,7 +1,6 @@
 #colorwheel {
-  float: right;
-  background-color: #aaa;
-  padding: 30px 30px 40px;
+  padding: 0 40px 70px;
+  display: none;
 }
 
 .hex {
@@ -46,4 +45,78 @@
 
 .hex-offset3 {
   margin-left: 69px;
+}
+
+.collapsible .collapsible-content {
+  display: none;
+}
+
+.collapsible.open .collapsible-content {
+  display: block
+}
+
+.collapsible-toggle {
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+  padding:  3px 10px 1px;
+  margin: 0 0 3px 0;
+}
+
+.collapsible.open .collapsible-toggle .triangle {
+  transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+.collapsible-toggle .triangle {
+  border-top: 6px solid transparent;
+  border-left: 6px solid #fff;
+  border-bottom: 6px solid transparent;
+  width: 0;
+  height: 0;
+  float: left;
+  margin: 10px 8px 10px 0;
+}
+
+#sidebar .collapsible-content {
+  font-size: 15px;
+  padding: 10px;
+}
+
+#sidebar .field {
+  margin-bottom: 3px;
+}
+
+#sidebar label {
+  text-transform: uppercase;
+  font-weight: 800;
+  width: 70px;
+  font-size: 12px;
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+
+#sidebar input {
+  border: 1px solid #888;
+  font-family: Courier;
+  color: #333;
+  padding: 3px 3px 1px;
+  font-size: 13px;
+  width: 156px;
+}
+
+#sidebar input.color {
+  width: 67px;
+}
+
+iframe {
+  width: 869px;
+  height: 750px;
+  border: 1px solid #bbb;
 }

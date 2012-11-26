@@ -27,4 +27,12 @@ $(function() {
     evt.preventDefault();
     scrollTo( $( 'body' ) );
   });
+
+  $( '.collapsible-toggle' ).click( function( evt ) {
+    evt.preventDefault();
+    var $this = $( this ),
+      $collapsible = $this.closest( '.collapsible' );
+
+    $collapsible.toggleClass( 'open' );
+  });
 });

@@ -41,7 +41,7 @@ a:hover {
   background-image:         linear-gradient(to bottom, #f13d3a, #CC2500);
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
   color: #f9f9f9 !important;
-  text-shadow: 0 -1px 1px #000;
+  text-shadow: 0 -1px 1px #444;
 }
 
 .button:hover {
@@ -108,7 +108,6 @@ a:hover {
 
 .brand:hover {
   text-decoration: none;
-  background: url(../img/robot.png) no-repeat;
 }
 
 .brand img {
@@ -212,14 +211,15 @@ a:hover {
 
 .hero.banner h1 {
   font-size: 74.1px;
-  margin: 20px 0 0;
+  line-height: 75px;
+  margin: 20px 0 10px;
   text-shadow: 1px 1px 0 #000;
   color: inherit;
 }
 
 .hero.banner p {
   line-height: 150%;
-  margin: 10px 0;
+  margin: 0;
   font-size: 20px;
   color: inherit;
 }
@@ -416,11 +416,6 @@ ol li, ul li {
   height: 32px;
   vertical-align:middle;
   margin-right: 5px;
-}
-
-.try-it {
-  font-size: 32px;
-  padding: 8px 20px;
 }
 
 .icon16{
