@@ -613,8 +613,10 @@ h1, h2, h3, h4, h5 {
   line-height: 42px;
 }
 
+@postBorderColor: #0f0;
+
 .post h3 {
-  border-bottom: 2px solid #222222 /*{post-header-border}*/;
+  border-bottom: 2px solid @postBorderColor /*{post-header-border}*/;
   padding-bottom: 7px;
   margin-bottom: 15px;
   color: #181818 /*{post-header-color}*/;
