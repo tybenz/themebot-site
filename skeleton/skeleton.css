@@ -583,7 +583,7 @@ h1, h2, h3, h4, h5 {
   background-image:         linear-gradient(to bottom, #eeeeee /*{header-background-start}*/, #dddddd /*{header-background-end}*/); /* Firefox 16+, IE10, Opera 12.50+ */
   margin-bottom: 40px;
   overflow: hidden;
-  color: #222222 /*{header-color}*/;
+  color: #222222 /*{header-text-color}*/;
 }
 
 .logo {
@@ -613,18 +613,24 @@ h1, h2, h3, h4, h5 {
   line-height: 42px;
 }
 
-@postBorderColor: #0f0;
-
 .post h3 {
-  border-bottom: 2px solid @postBorderColor /*{post-header-border}*/;
+  border-bottom: 2px solid #555555 /*{post-header-border}*/;
   padding-bottom: 7px;
   margin-bottom: 15px;
   color: #181818 /*{post-header-color}*/;
 }
 
-.post p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif /*{post-font}*/;
-  color: #444444 /*{post-color}*/;
+.post p, .post ol, .post ul {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif /*{post-text-font}*/;
+  color: #444444 /*{post-text-color}*/;
+}
+
+.post strong {
+  color: inherit;
+}
+
+.post a {
+  color: #f13d3a /*{post-link-color}*/;
 }
 
 .post ul {
@@ -634,9 +640,9 @@ h1, h2, h3, h4, h5 {
 .footer {
   padding-top: 20px;
   margin-top: 100px;
-  border-top: 1px solid #444 /*{footer-border}*/;
+  border-top: 1px solid #444 /*{footer-top-border}*/;
   position: relative;
-  color: #333333 /*{footer-color}*/;
+  color: #333333 /*{footer-text-color}*/;
 }
 
 .footer .links {

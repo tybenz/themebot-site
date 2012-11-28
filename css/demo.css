@@ -82,16 +82,16 @@
   margin: 10px 8px 10px 0;
 }
 
-#sidebar .collapsible-content {
+#tmb-side-bar .collapsible-content {
   font-size: 15px;
   padding: 10px;
 }
 
-#sidebar .field {
+#tmb-side-bar .field {
   margin-bottom: 3px;
 }
 
-#sidebar label {
+#tmb-side-bar label {
   text-transform: uppercase;
   font-weight: 800;
   width: 70px;
@@ -102,7 +102,7 @@
   top: 1px;
 }
 
-#sidebar input {
+#tmb-side-bar input {
   border: 1px solid #888;
   font-family: Courier;
   color: #333;
@@ -111,7 +111,7 @@
   width: 156px;
 }
 
-#sidebar input.color {
+#tmb-side-bar input.color {
   width: 67px;
 }
 
@@ -119,4 +119,91 @@ iframe {
   width: 869px;
   height: 750px;
   border: 1px solid #bbb;
+}
+
+#colorpicker {
+  width: 185px;
+  height: 150px;
+  padding: 10px;
+  background-color: #000;
+  z-index: 5;
+  position: absolute;
+  display: none;
+}
+
+#colorpicker .tmb-colorpicker-graph {
+  height: 150px;
+  width: 150px;
+  float: left;
+}
+
+#colorpicker .graph {
+  height: 150px;
+  width: 150px;
+  position: relative;
+}
+
+#colorpicker .graph .thumb {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #000;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border-radius: 10px;
+  z-index: 3;
+  background: white;
+}
+
+#colorpicker .tmb-colorpicker-hue {
+  width: 20px;
+  height: 150px;
+  float: left;
+  margin-left: 13px;
+}
+
+#colorpicker .hue {
+  background-image: url(../themebot/img/hue.png);
+  width: 20px;
+  height: 150px;
+  position: relative;
+}
+
+#colorpicker .hue .thumb {
+  height: 10px;
+  width: 20px;
+  border-width: 1px 0;
+  position: absolute;
+  top: 20px;
+  z-index: 3;
+}
+
+#colorpicker .hue .thumb:before {
+  display: block;
+  width: 7px;
+  height: 10px;
+  background: url(../themebot/img/arrow-right.png) no-repeat;
+  position: absolute;
+  left: -7px;
+  content: "";
+}
+
+#colorpicker .hue .thumb:after {
+  display: block;
+  width: 7px;
+  height: 10px;
+  background: url(../themebot/img/arrow-left.png) no-repeat;
+  position: absolute;
+  right: -7px;
+  content: "";
+}
+
+#colorpicker .mask {
+  background: url(../themebot/img/mask.png) no-repeat;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
 }
