@@ -44,6 +44,10 @@ a:hover {
   text-shadow: 0 -1px 1px #444;
 }
 
+.small-button {
+  font-size: 30px;
+}
+
 .button:hover {
   text-decoration: none;
   background-color: #f13d3a;
@@ -78,15 +82,9 @@ a:hover {
   float: left;
 }
 
-.container {
-  width: 1170px;
-  margin: auto;
-}
-
 .header {
-  height: 40px;
   padding: 10px 0;
-  margin: 40px 0 60px;
+  margin: 40px 0;
 }
 
 .header .container {
@@ -119,12 +117,10 @@ a:hover {
   list-style: none;
   padding: 0;
   color: #333;
-  position: absolute;
-  bottom: 12px;
-  right: 0;
   font-size: 16px;
   line-height: 16px;
   margin: 0;
+  margin: 33px 0 0;
 }
 
 .header .nav img {
@@ -135,7 +131,7 @@ a:hover {
 
 .header .nav li {
   float: left;
-  margin: 0 35px 0 0;
+  margin: 0 34px 0 0;
 }
 
 .header .nav li.last {
@@ -264,7 +260,6 @@ a:hover {
 
 .content-block {
   font-size: 18px;
-  margin-bottom: 60px;
 }
 
 .content-block p {
@@ -454,3 +449,120 @@ ol li, ul li {
 .icon32.play{ background-position:-96px 0; }
 .icon32.robot{ background-position:-128px 0; }
 .icon32.download{ background-position:-160px 0; }
+
+@media only screen and (min-width: 960px) and (max-width: 1169px) {
+  .hero.banner h1 {
+    font-size: 62px;
+    margin-bottom: 0;
+  }
+
+  .hero.banner p {
+    font-size: 16.7px;
+  }
+
+  .hero.banner .button {
+    font-size: 60px;
+    padding: 27px 0 23px;
+  }
+
+  .content-block {
+    font-size: 16px;
+  }
+
+  .header .nav li {
+    margin-right: 15px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 959px) {
+  .header .nav .small {
+    display: inline;
+  }
+  .header .nav .large {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header .nav .small {
+    display: inline;
+  }
+  .header .nav .large {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .hero.banner h1 {
+    font-size: 49.8px;
+    margin-bottom: 0;
+  }
+
+  .hero.banner p {
+    font-size: 18px;
+  }
+
+  .hero.banner .button {
+    font-size: 60px;
+    padding: 44px 0 41px;
+  }
+
+  .content-block {
+    font-size: 16px;
+  }
+
+  .header .nav {
+    margin: 26px 0 0;
+  }
+
+  .header .nav li {
+    margin-right: 30px;
+  }
+
+  .content-block {
+    font-size: 14px;
+  }
+  .header .nav .small {
+    display: none;
+  }
+  .header .nav .large {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 758px) {
+  .hero.banner h1 {
+    font-size: 91px;
+    line-height: 79px;
+    margin-bottom: 20px;
+  }
+
+  .hero.banner p {
+    font-size: 18px;
+  }
+
+  .hero.banner .button {
+    font-size: 83px;
+    padding: 44px 0 41px;
+  }
+
+  .footer .right {
+    position: relative;
+    bottom: 17px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .hero.banner h1 {
+    font-size: 73.7px;
+    line-height: 71px;
+  }
+
+  .hero.banner p {
+    font-size: 19px;
+  }
+
+  .footer .links li {
+    margin: 0 9px;
+  }
+}
