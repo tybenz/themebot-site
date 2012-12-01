@@ -55,6 +55,10 @@
   display: block
 }
 
+.collapsible.open .collapsible-toggle {
+  margin: 0;
+}
+
 .collapsible-toggle {
   cursor: pointer;
   background-color: #333;
@@ -63,7 +67,7 @@
   line-height: 36px;
   font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
   padding:  3px 10px 1px;
-  margin: 0 0 3px 0;
+  margin: 0 0 3px;
 }
 
 .collapsible.open .collapsible-toggle .triangle {
@@ -84,7 +88,10 @@
 
 #tmb-side-bar .collapsible-content {
   font-size: 15px;
-  padding: 10px;
+  padding: 10px 10px 13px;
+  background-color: #f0f0f0;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.3) inset;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.3) inset;
 }
 
 #tmb-side-bar .field {
