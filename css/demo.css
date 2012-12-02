@@ -92,6 +92,7 @@
   background-color: #f0f0f0;
   -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.3) inset;
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.3) inset;
+  margin-bottom: 3px;
 }
 
 #tmb-side-bar .field {
@@ -209,8 +210,5 @@ iframe {
   background: url(../themebot/img/mask.png) no-repeat;
   width: 150px;
   height: 150px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
   z-index: 2;
 }
