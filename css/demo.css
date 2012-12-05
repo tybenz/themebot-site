@@ -137,7 +137,6 @@ iframe {
   z-index: 5;
   position: absolute;
   display: none;
-  cursor: crosshair;
 }
 
 #colorpicker .tmb-colorpicker-graph {
